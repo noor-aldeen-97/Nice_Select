@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Select</title>
+    <link rel="stylesheet" href="niceSelect.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div>
+        <div>
+            <label>What social networking sites do you prefer? <small>(Multiple Choose)</small></label>
+            <select id="select" title="nice Select" multiple>
+                <option value="1">Facebook</option>
+                <option value="2">YouTube</option>
+                <option value="3">Instagram</option>
+                <option value="4">WhatsApp</option>
+                <option value="5">Twitter</option>
+                <option value="6">Discard</option>
+            </select>
+        </div>
+        <div class="mt-4">
+            <label>What social networking sites do you prefer? <small>(One Choose)</small></label>
+            <select id="select2" title="nice Select">
+                <option value="1">Facebook</option>
+                <option value="2">YouTube</option>
+                <option value="3">Instagram</option>
+                <option value="4">WhatsApp</option>
+                <option value="5">Twitter</option>
+                <option value="6">Discard</option>
+            </select>
+        </div>
+    </div>
+    <script src="niceSelect.js"></script>
+    <script>
+        const niceSelectObj = new niceSelect({
+            elementId: 'select'
+        });
+        const niceSelectObj2 = new niceSelect({
+            elementId: 'select2',
+            customItemsClass: 'bg-dark text-white',
+            customSelectedClass: 'custom-selected'
+        });
+    </script>
+</body>
+</html>
